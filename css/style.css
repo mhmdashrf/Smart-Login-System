@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+label{
+    margin-top: 20px;
+}
+.sizeF5{
+ font-size: 20px;
+}
+.sizeF6{
+    font-size: 17px;
+}
+#secSignUp{
+    padding: 20px 0px;
+}
+.section-container{
+  background-image: url(../images/Image.png);
+  background-position: center center;
+  background-size: cover;
+   min-height: 100vh;
+   position: relative;
+   padding-top:30px;
+}
+.section-container h1{
+    color: #fff;
+    font-size: 35px;
+}
+.main-div{
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 20px;
+    width: 50%;
+    position: absolute;
+    transform: translate(50%);
+    z-index: 2;
+}
+.p-link{
+    font-size: 18px;
+}
+.section-container input{
+   background-color: inherit;
+   background-color: transparent !important;
+   color: #fff !important;
+   border: 1px solid #B6B6AA;
+}
+.section-container input::placeholder{
+    color:  #B6B6AA;
+}
+#btnSignUp{
+    font-size: 17px;
+}
+#btnSignUp:hover{
+    color: #fff;
+}
+.divValid{
+    color: #28A745;
+}
+#goToSignUp,#goToSignIn{
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+#goToSignUp:hover{
+    text-decoration: underline;
+}
+#goToSignIn:hover{
+    text-decoration: underline;
+}
+.logo{
+    color: #fff;
+    cursor: pointer;
+}
+.inner{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+     text-transform:capitalize;
+}
+.div-logo{
+    width: 15%;
+}
+.animtionn{
+    position: relative;
+    display: flex;
+}
+.animtionn span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    background-color: #4fc3dc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4fc3dc44
+    ,0 0 50px #4fc3dc,  
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear 10;
+    animation-duration: calc(20s / var(--i)); 
+    z-index: 1;
+}   
+.animtionn span:nth-child(even){
+    background: #ff2d75;    
+    box-shadow: 0 0 10px #ff2d7544
+    ,0 0 50px  #ff2d75,
+    0 0 100px  #ff2d75;
+}
+.btn-login{
+    border: none;
+     background: transparent;
+}
+@keyframes animate{ 
+    0%{
+        transform: translateY(80vh) scale(0);
+    }
+    100%{
+        transform: translateY(10vh) scale(1);
+    }
+}
+@media(max-width:1200px){
+    .section-container{
+        padding-top: 20px;
+    }
+    .main-div{
+        width: 80%;
+       transform: translate(12%);
+    }
+}
+@media(max-width:991px){
+    .main-div{
+        width: 80%;
+       transform: translate(12%);
+    }
+    .divLastForm{
+        flex-direction: column;
+    }
+    .section-container{
+        padding-top: 27px;
+    }
+    .sizeF5{
+        font-size: 19px;
+       }
+       .sizeF6{
+           font-size: 15px;
+       }
+       .section-container{
+        padding-top: 18px;
+    }
+    .section-container h1{
+        font-size: 30px;
+    }
+    .p-link{
+        font-size: 18px;
+    }
+    /* #secSignUp{
+        padding: 13px 0px;
+    } */
+    #goToSignUp,#goToSignIn{
+        font-size: 17px;
+    }
+}
+@media(max-width:676px){
+    .main-div{
+        width: 80%;
+        transform: translate(10%);;
+    }
+    .divLastForm{
+        flex-direction: column;
+    }
+    .sizeF5{
+        font-size: 18px;
+       }
+       .sizeF6{
+           font-size: 15px;
+       }
+       .section-container{
+        padding-top: 18px;
+    }
+    .section-container h1{
+        font-size: 27px;
+    }
+    .p-link{
+        font-size: 18px;
+    }
+    /* #secSignUp{
+        padding: 10px 0px;
+    } */
+    #goToSignUp,#goToSignIn{
+        font-size: 18px;
+    }
+}
+@media(max-width:500px){
+    .main-div{
+        width: 90%;
+        transform: translateX(5%);
+    }
+    .divLastForm{
+        flex-direction: column;
+    }
+    .sizeF5{
+        font-size: 16px;
+       }
+       .sizeF6{
+           font-size: 13px;
+       }
+       .section-container{
+        padding-top: 15px;
+    }
+    .section-container h1{
+        font-size: 25px;
+    }
+    .p-link{
+        font-size: 15px;
+    }
+    /* #secSignUp{
+        padding: 10px 0px;
+    } */
+    #goToSignUp,#goToSignIn{
+        font-size: 15px;
+    }
+    
+}

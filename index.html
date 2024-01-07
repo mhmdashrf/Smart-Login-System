@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section  class="section-container">
+      <div class="wrapper ">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        
+          <div id="secSignIn" class="main-div d-flex flex-column justify-content-center align-items-center  mx-auto px-5 py-4 ">
+           
+            <h1>SignIn</h1>
+            <label  class="" for="" ></label>
+            <input id="emailSignIn" class="form-control w-100" type="email" placeholder="Enter your Email">
+            <label class="" for="" ></label>
+            <input id="passwordSignIn" class="form-control mb-4" type="password" placeholder="Enter your Password">
+            <div class="divValidSignIn text-danger d-none sizeF5 ">incorrect email or password</div>
+            <button id="btnSignIn" class="btn btn-outline-warning w-100 mt-3">Sign in</button>
+           <div class="divLastForm d-flex align-items-center justify-content-center">
+            <p class="p-link text-white mt-3 me-2">Don’t have an account?</p>
+            <button id="goToSignUp" class="btn-login" href=""> Create Account</button>
+           </div>
+        </div>
+          <div id="secSignUp" class="main-div d-flex flex-column justify-content-center align-items-center mx-auto  px-5 d-none">
+            <h1>Create Account</h1>
+            <label  class="" for="" ></label>
+            <input oninput="validateName()" id="nameInput" class="form-control " type="text" placeholder="Enter your name">
+            <div class="siteNameErrorDiv invalid-feedback d-none  rounded-1 px-3  sizeF6">
+              Please Enter a valid Name <i class="fa-solid fa-signature"></i>
+            </div>
+            <label class="" for="" ></label>
+            <input oninput="validateEmail()" id="emailInput" class="form-control" type="email" placeholder="Enter your Email">
+            <div class="siteEmailErrorDiv invalid-feedback d-none py-1 rounded-1 px-3 sizeF6">
+              Please Enter a valid E-mail <i class="fa-solid fa-at"></i>
+            </div>
+            <label class=" for=" ></label>
+            <input oninput="validatePass()" id="passwordInput" class="form-control mb-1" type="password" placeholder="Enter Password">
+            <p class="p-passValid invalid-feedback rounded-1 px-3 sizeF5 d-none">password must contains : </p>
+
+              <li class="longLength invalid-feedback d-none  rounded-1 px-3 sizeF6 ">1-At 8-20 Characters Long </li>
+
+              <li class="uppercasechar invalid-feedback  rounded-1 px-3 d-none sizeF6">2- At least one Uppercase Characte  </li>
+              <li class=" lowercasechar invalid-feedback d-none rounded-1 px-3 sizeF6">3- At least one Lowercase Character</li>
+              <li class="specialchar invalid-feedback d-none  rounded-1 px-3  sizeF6">4 - At least one Special character.</li>
+              <li class="digitchar invalid-feedback d-none  rounded-1 px-3 sizeF6">5- At least one number </li>
+              
+              <li class="whiteSpace invalid-feedback d-none  rounded-1 px-3  sizeF6">6-Password must not contain Whitespaces</li>
+            <div class="divInvalid text-danger d-none sizeF5 mt-2">All inputs is required</div>
+            <div class="divValid d-none py-3">Success</div>
+            <div class="divExists d-none text-danger sizeF5 mt-2">Email Already Exists</div>
+            <button id="btnSignUp" class="btn btn-outline-warning   w-100 mt-4 ">Sign Up</button>
+          <div class="divLastForm d-flex justify-content-center align-items-center">
+            <p class="p-link text-white mt-3  me-2">You have an account?</p>
+            <button id="goToSignIn" class="btn-login" href=""> Signin</button>
+          </div>
+        </div>
+         </div>
+      
+      </div>
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
